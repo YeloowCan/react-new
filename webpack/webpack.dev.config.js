@@ -20,5 +20,7 @@ module.exports = WebpackMerge.merge(baseWebpackConfig, {
     // 要求每次都返回HTML，不配置会出现can not GET/
     historyApiFallback: true,
     hot: true,
+    open: true,
+    compress: true, //开启gzip压缩
   },
 });

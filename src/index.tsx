@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
+import { Button, Card } from 'antd';
 import ReactDom from 'react-dom';
+import './index.less';
 
 class App extends Component {
   render() {
-    return <h1> Hello, world! </h1>;
+    return (
+      <h1 className="test">
+        <Card title="ss" />
+        <Button title="aa">sss</Button> Hello, world!{' '}
+      </h1>
+    );
   }
 }
 
