@@ -1,17 +1,8 @@
-import React, { Component } from 'react';
-import { Button, Card } from 'antd';
+import React from 'react';
 import ReactDom from 'react-dom';
+import App from './app';
 import './index.less';
 
-class App extends Component {
-  render() {
-    return (
-      <h1 className="test">
-        <Card title="ss" />
-        <Button title="aa">sss</Button> Hello, world!{' '}
-      </h1>
-    );
-  }
-}
+const ReactNew = () => <App />;
 
-ReactDom.render(<App />, document.getElementById('root'));
+ReactDom.render(<ReactNew />, document.getElementById('root') as HTMLElement);
